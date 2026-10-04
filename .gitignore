@@ -1,0 +1,162 @@
+# ============================================================
+# FINOVA - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Java / Maven
+# ------------------------------------------------------------
+
+desktop/target/
+target/
+
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper generated files (if not intentionally tracked)
+.mvn/wrapper/maven-wrapper.jar
+
+# ------------------------------------------------------------
+# Java / IDE
+# ------------------------------------------------------------
+
+.idea/
+*.iml
+
+.vscode/
+.classpath
+.project
+.settings/
+
+# Eclipse
+bin/
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+.nb-gradle/
+
+# ------------------------------------------------------------
+# JavaFX / Application generated files
+# ------------------------------------------------------------
+
+*.log
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ------------------------------------------------------------
+# FINOVA local data
+# ------------------------------------------------------------
+
+# SQLite database
+data/database/*.db
+data/database/*.sqlite
+data/database/*.sqlite3
+
+# SQLite temporary files
+data/database/*.db-shm
+data/database/*.db-wal
+data/database/*.db-journal
+
+# ------------------------------------------------------------
+# Generated / user-specific data
+# ------------------------------------------------------------
+
+data/logs/
+data/exports/
+data/invoices/
+data/receipts/
+
+# Keep folder structure in Git
+!data/logs/.gitkeep
+!data/exports/.gitkeep
+!data/invoices/.gitkeep
+!data/receipts/.gitkeep
+!data/database/.gitkeep
+
+# ------------------------------------------------------------
+# AI / ML generated files
+# ------------------------------------------------------------
+
+models/*.bin
+models/*.gguf
+models/*.ggml
+models/*.safetensors
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# Local AI caches
+ai-service/.cache/
+ai-service/models/
+
+# ------------------------------------------------------------
+# Environment / secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.jks
+
+# ------------------------------------------------------------
+# Operating system
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+# Personal / local configuration
+# ------------------------------------------------------------
+
+config.local.*
+application-local.*
