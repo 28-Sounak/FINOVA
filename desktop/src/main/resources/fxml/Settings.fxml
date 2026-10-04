@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="25"
+      styleClass="page-container">
+
+    <padding>
+        <Insets top="30" right="35" bottom="30" left="35"/>
+    </padding>
+
+    <VBox spacing="5">
+
+        <Label text="Settings"
+               styleClass="section-title"/>
+
+        <Label text="Configure your FINOVA application."
+               styleClass="page-description"/>
+
+    </VBox>
+
+    <VBox spacing="20"
+          styleClass="settings-card">
+
+        <Label text="Application Settings"
+               styleClass="subsection-title"/>
+
+        <GridPane hgap="15"
+                  vgap="15">
+
+            <Label text="Company Name:"
+                   GridPane.columnIndex="0"
+                   GridPane.rowIndex="0"/>
+
+            <TextField promptText="Enter company name"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="0"/>
+
+            <Label text="Currency:"
+                   GridPane.columnIndex="0"
+                   GridPane.rowIndex="1"/>
+
+            <TextField text="INR"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="1"/>
+
+        </GridPane>
+
+        <CheckBox text="Enable desktop notifications"/>
+
+        <CheckBox text="Automatically check for duplicate invoices"/>
+
+        <Button text="Save Settings"
+                styleClass="primary-button"/>
+
+    </VBox>
+
+</VBox>
