@@ -8,10 +8,18 @@ import javafx.scene.Scene;
 
 import javafx.stage.Stage;
 
+import com.invoiceautomation.database.DatabaseManager;
+
 public class Main extends Application
 {
     @Override 
-    public void start(Stage stage) throws Exception{
+    public void start(Stage stage) throws Exception
+    {
+        //Initialize the SQLite Database
+        DatabaseManager.initializeDatabase();
+
+        //Load the Database
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Dashboard.fxml"));
 
         Scene scene = new Scene(loader.load(), 1200, 750);
